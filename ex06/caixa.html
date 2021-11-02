@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            background-color: grey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            display: flex;
+            background-color: white;
+        }
+        nav{
+            margin: 10px auto;
+            background-color: rgb(150, 137, 137);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.508);
+        }
+        h1{
+            padding: 20px 20px;
+            font-size: 2em;
+            font-weight: 900;
+        }
+        ul{
+            display: flex;
+            list-style: none;
+        }
+        li{
+            padding: 10px 50px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        a:hover{
+            animation-name: anima_1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        .logo{
+            position: relative;
+            background-color: black;
+            width: 100px;
+            height: 70px;
+            margin: 10px 10px;
+            border-radius: 5px 20px;
+        }
+        .logo::after{
+            content: '    logo';
+            position: absolute;
+            top: 35px;
+            color: white;
+        }
+        main{
+            max-width: 1300px;
+            height: 70vh;
+            background-color: white;
+            margin: 20px auto;
+        }
+        .main-all{
+            max-width: 1150px;
+            height: 100%;
+        }
+        aside{
+            float: right;
+            margin-top: 10px;
+            border: 1px solid gray;
+        }
+        .all{
+            max-width: 860px;
+            height: 100%;
+            border-right: 1px solid black;
+        }
+        .caixa1{
+            max-width: 800px;
+            margin-top: 30px;
+        }
+        footer{
+            position: absolute;
+            bottom: 0;
+        }
+        @keyframes anima_1{
+            0%{
+                color: yellow;
+            }
+            20%{
+                color: red;
+            }
+            40%{
+                color: green;
+            }
+            60%{
+                color: purple;
+            }
+            80%{
+                color: blue;
+            }
+            100%{
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#"><div class="logo"></div></a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produto</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="main-all">
+            <aside>
+                <h2>Anuncio</h2>
+            </aside>
+            <section class="all">
+                <section class="caixa1">
+                    <h1>Conteúdo 1</h1>
+                    <article>
+                        <h2>Brasil</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quia officia voluptatem illum ad fugiat quasi atque laboriosam, temporibus iure, rem molestias voluptates eveniet ut natus. Laboriosam at earum debitis!</p>
+                    </article>
+                </section>
+                <section class="caixa1">
+                    <h1>Conteúdo 2</h1>
+                    <article>
+                        <h2>Corona</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptas officiis consequatur vel est autem vitae quibusdam ex impedit odio qui, incidunt nobis quasi et, ratione nesciunt sed culpa numquam.</p>
+                    </article>
+                </section>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

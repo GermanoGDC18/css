@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando as pseudoclasses</title>
+    <style>
+        div{
+            display: inline-block;/*Todos os elementos na mesma linha*/
+            width: 100px;
+            height: 200px;
+            background-color: gray;
+            text-align: center;
+            margin-top: 20px;
+            border: 1px solid black;
+        }
+        div:hover{/*Elementos executam uma ação quando o mouse for passado por cima*/
+            background-color: blue;
+        }
+        main:hover{
+           color: green;
+        }
+        main > span{
+            display: none;
+        }
+        main:hover > span{
+            display: block;
+        }
+        .nue:hover{
+            height: 400px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>1</div>
+    <div class="nue">2</div>
+    <div>3</div>
+    <main>
+        <p>Oi tudo bem?</p>
+        <span>TEXTO ESCONDIDO</span>
+    </main>
+</body>
+</html>
