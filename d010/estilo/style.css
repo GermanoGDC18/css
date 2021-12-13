@@ -79,7 +79,7 @@ main{
     background-color: white;
     min-width: 300px;
     max-width: 1100px;
-    margin: 20px 104px;
+    margin: 20px 20px;
     box-shadow: 0px 0px 10px lime;
     border-radius: 10px;
 }
